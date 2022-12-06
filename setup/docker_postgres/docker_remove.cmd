@@ -5,6 +5,6 @@
 TITLE Run "docker RM"
 
 :: Удаляет контейнер
-docker rm /advertisement_db
+docker rm /advertisement_container
 
 PAUSE
