@@ -5,6 +5,8 @@
 TITLE Installing Entity Framework CLI
 
 :: Устанавливает инструменты Entity Framework
-dotnet tool install --global dotnet-ef
+:: https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install
+:: https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-uninstall
+dotnet tool install --global --framework net6.0 dotnet-ef
 
 PAUSE
