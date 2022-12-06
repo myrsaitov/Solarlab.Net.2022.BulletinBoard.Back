@@ -1,10 +1,8 @@
 @ECHO OFF
-:: Получает образ с docker-hub
+:: Скачивает образ postgres указанной версии
 
-:: Устанавливает заголовок окна
-TITLE Run "docker pull postgres"
+:: Переходит в рабочую папку
+CD ./../../../Docker/V1/Postgres
 
-:: Получает образ с docker-hub
-docker pull postgres
-
-PAUSE
+:: Вызывает процедуру с параметрами
+CALL docker_pull.cmd 15.1

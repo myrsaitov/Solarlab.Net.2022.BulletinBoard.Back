@@ -1,19 +1,8 @@
 @ECHO OFF
-:: Останавливает контейнер и удаляет его
+:: Запускает контейннер из образа
 
-:: Устанавливает заголовок окна
-TITLE Run "docker STOP and REMOVE"
+:: Переходит в рабочую папку
+CD ./../../../Docker/V1/Postgres
 
-:: Останавливает контейнер
-docker stop advertisement_container
-
-:: Выводит логи контейнера
-docker logs advertisement_container
-
-:: Удаляет контейнер
-docker rm /advertisement_container
-
-:: Выводит список запущенных контейнеров
-docker ps
-
-PAUSE
+:: Вызывает процедуру с параметрами
+CALL docker_stop_and_remove.cmd 15.1 net2022_advertisement
