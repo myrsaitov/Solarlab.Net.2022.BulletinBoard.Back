@@ -5,4 +5,4 @@
 CD ./../../../Docker/V1/Postgres
 
 :: Вызывает процедуру с параметрами
-CALL docker_run.cmd 15.1 49002 net2022_advertisement
+CALL docker_run.cmd 15.1 49002 net2022 advertisement
