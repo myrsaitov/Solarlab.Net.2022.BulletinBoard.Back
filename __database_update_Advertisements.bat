@@ -4,7 +4,13 @@
 :: Устанавливает заголовок окна
 TITLE "Updating Data Base"
 
-SET PROJECT_NAME=Advertisements
+:: Имя проекта (получает из имени файла)
+::
+:: Отделяет имя файла от PATH:
+SET FILE_NAME=%~n0
+:: Отделяет первые 18 символов "__database_update_" 
+SET PROJECT_NAME=%FILE_NAME:~18%
+ECHO PROJECT_NAME = %PROJECT_NAME%
 
 :: Обновляет базу данных
 :: Можно указать имя нужной миграции: dotnet ef database update %MigrationName%
