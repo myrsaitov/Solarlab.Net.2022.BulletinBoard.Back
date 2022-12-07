@@ -19,10 +19,4 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
-    <ProjectReference Include="..\..\Application\Advertisements.AppServices\Advertisements.AppServices.csproj" />
-    <ProjectReference Include="..\..\Domain\Advertisements.Domain\Advertisements.Domain.csproj" />
-    <ProjectReference Include="..\Advertisements.Infrastructure\Advertisements.Infrastructure.csproj" />
-  </ItemGroup>
-
 </Project>
