@@ -79,6 +79,7 @@ IF EXIST src/%~2 (
     : Добавляет NuGet
     CALL :DotNetAddPackage Infrastructure %~2 Registrar Microsoft.EntityFrameworkCore || EXIT /B 1
     CALL :DotNetAddPackage Infrastructure %~2 Registrar Microsoft.Extensions.DependencyInjection.Abstractions || EXIT /B 1
+	CALL :DotNetAddPackage Infrastructure %~2 Registrar Npgsql.EntityFrameworkCore.PostgreSQL || EXIT /B 1
 
     :: Создает библиотеку "Mapper"
     CALL :DotNetNew Infrastructure %~2 Mapper classlib || EXIT /B 1
