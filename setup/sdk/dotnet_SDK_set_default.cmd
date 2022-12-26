@@ -1,8 +1,8 @@
 @ECHO OFF
 :: Устанавливает версию SDK по умолчанию
 
-:: Устанавливает заголовок окна
-TITLE Run "dotnet SDK default"
+:: Заголовок окна - путь и имя файла
+TITLE %~0
 
 :: Устанавливает версию SDK по умолчанию
 :: https://learn.microsoft.com/ru-ru/dotnet/core/tools/global-json
